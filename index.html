@@ -4,39 +4,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CpsDesk</title>
 
-    <!-- my fonts -->
-    <!-- 1- for hedings -->
+    <!-- fonts: Montserrat for headings, Poppins for paragraphs -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <!-- 2- for paragraph -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <!-- nav-bar -->
-    <nav id="nav">
-        <img src="assets/Cps-logo.png" alt="logo" class="logo">
-        
-        
-        <div class="nav-links">
-            <a href="/" class="nav-links-item">Home</a>
-            <a href="/" class="nav-links-item">Features</a>
-            <a href="/" class="nav-links-item">Solutions</a>
-            <a href="/" class="nav-links-item">See it</a>
-            <a href="/" class="nav-links-item">Get Started</a>
-            <a href="/" class="nav-links-item">FAQ</a>
-        </div>
-        
+<body class="page">
+    <div class="home-wrap">
 
-        <button class="book-demo" #book-demo>Book a Demo</button>
-    </nav>
+        <header class="header">
+            <!-- nav-bar -->
+            <nav id="nav" class="navbar">
+                <img src="assets/imgs/Cps-logo.png" alt="logo" class="logo">
+
+                <div class="nav-links">
+                    <a href="#home" class="nav-links-item">Home</a>
+                    <a href="#" class="nav-links-item">Features</a>
+                    <a href="#" class="nav-links-item">Solutions</a>
+                    <a href="#" class="nav-links-item">See it</a>
+                    <a href="#" class="nav-links-item">Get Started</a>
+                    <a href="#" class="nav-links-item">FAQ</a>
+                </div>
+
+                <button class="btn book-demo">Book a Demo</button>
+            </nav>
+        </header>
+        <!-- ------------------------------------------------------------------------------------ -->
+        <!-- Home -->
+        <main id="home" class="home">
+            <!-- Home Hero -->
+            <section id="hero" class="hero">
+                <div class="hero-content">
+
+                    <span class="badge">• Private server • 100% white label • Unlimited User Seats</span>
+
+                    <h1 class="hero-title">
+                        <span class="hero-title-line">Client portal software</span>
+                        <span class="hero-title-line">Built under your brand</span>
+                        <span class="hero-title-line accent">Hosted on your private server</span>
+                    </h1>
+
+                    <p class="hero-text">
+                        Manage clients, projects, files, and approvals under your logo and custom domain.
+                        Give your team a fast login and your clients a branded portal with flat server hosting.
+                    </p>
+
+                    <button class="btn book-demo">Book a Demo</button>
+                </div>
+                <div class="left-hero-icons" aria-hidden="true">
+                    <!-- folder -->
+                    <div class="hero-icon hero-icon-card hero-icon-folder">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+                        </svg>
+                    </div>
+
+                    <!-- user -->
+                    <div class="hero-icon hero-icon-card hero-icon-users">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-users preview-icon">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <circle cx="9" cy="7" r="4" />
+                        </svg>
+                    </div>
+
+                    <!-- calendar -->
+                    <div class="hero-icon hero-icon-card hero-icon-calendar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-calendar preview-icon">
+                            <path d="M8 2v3" />
+                            <path d="M16 2v3" />
+                            <rect x="3" y="3" width="18" height="18" rx="2" />
+                            <path d="M3 9h18" />
+                        </svg>
+                    </div>
+                </div>
+
+
+                <div class="right-hero-icons" aria-hidden="true">
+                    <!-- check -->
+                    <div class="hero-icon hero-icon-card hero-icon-check">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-check preview-icon">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="m16 9-5.5 5.5L8 12" />
+                        </svg>
+                    </div>
+
+                    <!-- document -->
+                    <div class="hero-icon hero-icon-card hero-icon-document">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-file-text preview-icon">
+                            <path
+                                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+                            <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                            <path d="M10 9H8" />
+                            <path d="M16 13H8" />
+                            <path d="M16 17H8" />
+                        </svg>
+                    </div>
+
+                    <!-- chat -->
+                    <div class="hero-icon hero-icon-card hero-icon-chat">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-message-square-text preview-icon">
+                            <path
+                                d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z" />
+                            <path d="M7 11h10" />
+                            <path d="M7 15h6" />
+                            <path d="M7 7h8" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+            <!-- Home Dashboard -->
+
+            <img class="dashboard-img"
+                src="assets/imgs/FireShot Capture 338 - Admin - Dashboard - [survey.websitezone.co.uk] 1.png"
+                alt="dashboard">
+
+
+        </main>
+    </div>
+
+
+
+
 
     <script src="index.js"></script>
 </body>
